@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rosario:ital,wght@0,300..700;1,300..700&display=swap');
 
-* {
+/* * {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -90,4 +90,175 @@ span {
 .menu-icon {
   width: 27px;
   height: 27px;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --bg-color: #081b29;
+  --main-color: #00abf0;
+  --text-color: #333;
+  --second-text-color: #555;
+  --white-color: #fff;
+  --cover-color: linear-gradient(45deg, #00abf0, #006e9a);
+  --pages-color: linear-gradient(90deg, #fff, #ddd);
+  --border: .125rem solid #00abf0;
+  --box-shadow: 0 0 .6rem rgba(0, 0, 0, .2);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.wrapper {
+  position: relative;
+  width: 66rem;
+  height: 45rem;
+  padding: 2rem;
+}
+
+.cover {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: var(--cover-color);
+  box-shadow: var(--box-shadow);
+  border-top-left-radius: .6rem;
+  border-bottom-left-radius: .6rem;
+  transform-origin: right;
+}
+
+.cover.cover-left {
+  z-index: -1;
+}
+
+.cover.cover-right.turn {
+  transform: rotateY(180deg);
+}
+
+.book {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.book .book-page {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  padding: 2rem;
+  background: var(--pages-color);
+  box-shadow: 0 0 .6rem rgba(0, 0, 0, .1);
+  display: flex;
+}
+
+.profile-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-page .avatar {
+  width: 180px;
+  height: 180px;
+  margin-bottom: 6rem;
+  border-radius: 50%;
+  border: .25rem solid var(--main-color);
+}
+
+.profile-page h1 {
+  font-size: 2.7rem;
+  line-height: 1;
+}
+
+.profile-page h3 {
+  font-size: 1.5rem;
+  color: var(--main-color);
+}
+
+.profile-page .social-list {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  margin: .6rem 0 .8rem;
+  padding: 0;
+  height: 2.5rem;
+}
+
+.vk-link, .tg-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: var(--border);
+  fill: var(--main-color);
+  border-radius: 50%;
+  transition: .5s;
+}
+
+.tg-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.vk-link:hover, .tg-link:hover {
+  background-color: var(--main-color);
+  fill: var(--white-color);
+}
+
+.profile-text {
+  text-align: justify;
+}
+
+.btn-wrapper {
+  margin-top: 1.2rem;
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+  width: 9.5rem;
+  height: 3rem;
+  background: var(--main-color);
+  border: var(--border);
+  border-radius: .3rem;
+  font-size: 1rem;
+  color: var(--white-color);
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.btn-contact {
+  background: transparent;
+  color: var(--main-color);
+}
+
+.btn-contact:hover {
+  background: var(--main-color);
+  color: var(--white-color);
+}
+
+.btn-cv:hover {
+  background: transparent;
+  color: var(--main-color);
 }
