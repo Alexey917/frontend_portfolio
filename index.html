@@ -8,30 +8,13 @@
   <title>Portfolio</title>
 </head>
 <body>
-  <!-- <header>
-    <div class="logo"><span>J</span>ohn.</div>
-    <ul class="navlist">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <button class="menu-btn">
-      <svg class="menu-icon">
-        <use href="img/sprite.svg#menu"></use>
-      </svg>
-    </button>
-  </header> -->
-
   <div class="wrapper">
     <div class="cover cover-left"></div>
     <div class="cover cover-right turn"></div>
 
-    <div class="book">
-      <div class="book-page page-left">
-        <div class="profile-page">
+    <main class="book">
+      <section class="book-page page-left">
+        <article class="profile-page">
           <img src="img/1.jpg"  class="avatar" alt="1.jpg">
           <h1>Gordon Felix</h1>
           <h3>Web developer</h3>
@@ -57,30 +40,183 @@
           </p>
 
           <div class="btn-wrapper">
-            <a href="" class="btn btn-cv">Download CV</a>
-            <a href="" class="btn btn-contact">Contact Me</a>
+            <a href="#" class="btn btn-cv">Download CV</a>
+            <a href="#" class="btn btn-contact">Contact Me</a>
           </div>
-        </div>
-      </div>
+        </article>
+      </section>
 
-      <div class="book-page page-right" id="turn-1">
-        <div class="page-front">
+      <section class="book-page page-right turn" id="turn-1">
+        <article class="page-front">
           <h1 class="title">Work Experience</h1>
 
           <div class="workeduc-box">
             <div class="workeduc-content">
-              <span class="year">2020 - 2021</span>
-              <svg class="calendar-icon">
-                <use href="img/sprite.svg#calendar"></use>
-              </svg>
+              <div class="year-wrapper">
+                <svg class="calendar-icon">
+                  <use href="img/sprite.svg#calendar"></use>
+                </svg>
+                <span class="year">2020 - 2021</span>
+              </div>
+              <h3>Web Developer - Company</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In rerum esse tenetur itaque quo ex.</p>
+            </div>
+
+            <div class="workeduc-content">
+              <div class="year-wrapper">
+                <svg class="calendar-icon">
+                  <use href="img/sprite.svg#calendar"></use>
+                </svg>
+                <span class="year">2020 - 2021</span>
+              </div>
+              <h3>Web Developer - Company</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In rerum esse tenetur itaque quo ex.</p>
+            </div>
+
+            <div class="workeduc-content">
+              <div class="year-wrapper">
+                <svg class="calendar-icon">
+                  <use href="img/sprite.svg#calendar"></use>
+                </svg>
+                <span class="year">2020 - 2021</span>
+              </div>
+              <h3>Web Developer - Company</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In rerum esse tenetur itaque quo ex.</p>
+            </div>
+
+            
+          </div>
+          <span class="number-page">1</span>
+          <span class="nextprev-btn" data-page="turn-1">
+            <svg class="next-icon">
+              <use href="img/sprite.svg#next"></use>
+            </svg>
+          </span>
+        </article>
+        <article class="page-back">
+          <h1 class="title">Education</h1>
+
+          <div class="workeduc-box">
+            <div class="workeduc-content">
+              <div class="year-wrapper">
+                <svg class="calendar-icon">
+                  <use href="img/sprite.svg#calendar"></use>
+                </svg>
+                <span class="year">2020 - 2021</span>
+              </div>
+              <h3>Web Developer - Company</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In rerum esse tenetur itaque quo ex.</p>
+            </div>
+
+            <div class="workeduc-content">
+              <div class="year-wrapper">
+                <svg class="calendar-icon">
+                  <use href="img/sprite.svg#calendar"></use>
+                </svg>
+                <span class="year">2020 - 2021</span>
+              </div>
+              <h3>Web Developer - Company</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In rerum esse tenetur itaque quo ex.</p>
+            </div>
+
+            <div class="workeduc-content">
+              <div class="year-wrapper">
+                <svg class="calendar-icon">
+                  <use href="img/sprite.svg#calendar"></use>
+                </svg>
+                <span class="year">2020 - 2021</span>
+              </div>
               <h3>Web Developer - Company</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In rerum esse tenetur itaque quo ex.</p>
             </div>
           </div>
-        </div>
-        <div class="page-back"></div>
-      </div>
-    </div>
+
+          <span class="number-page">2</span>
+          <span class="nextprev-btn back" data-page="turn-1">
+            <svg class="prev-icon">
+              <use href="img/sprite.svg#prev"></use>
+            </svg>
+          </span>
+        </article>
+      </section>
+
+      <section class="book-page page-right" id="turn-2">
+        <article class="page-front">
+          <h1 class="title">My Services</h1>
+          <div class="services-box">
+            <div class="services-content">
+              <svg class="code-icon">
+                <use href="img/sprite.svg#code"></use>
+              </svg>
+              <h3>Web Development</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, nostrum!</p>
+              <a href="#" class="btn btn-cv">Read More</a>
+            </div>
+
+            <div class="services-content">
+              <svg class="paint-icon">
+                <use href="img/sprite.svg#paint"></use>
+              </svg>
+              <h3>Creste Design</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, nostrum!</p>
+              <a href="#" class="btn btn-cv">Read More</a>
+            </div>
+
+            <div class="services-content">
+              <svg class="chart-icon">
+                <use href="img/sprite.svg#chart"></use>
+              </svg>
+              <h3>Digital Marketing</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, nostrum!</p>
+              <a href="#" class="btn btn-cv">Read More</a>
+            </div>
+          </div>
+
+          <span class="number-page">3</span>
+          <span class="nextprev-btn" data-page="turn-2">
+            <svg class="next-icon">
+              <use href="img/sprite.svg#next"></use>
+            </svg>
+          </span>
+        </article>
+
+        <article class="page-back">
+          <h1 class="title">My Skills</h1>
+
+          <div class="skills-box">
+            <div class="skills-content">
+              <h3>Front-End</h3>
+              <div class="content">
+                <span>HTML</span>
+                <span>
+                  <svg class="css-icon">
+                    <use href="img/sprite.svg#css"></use>
+                  </svg>
+                  CSS
+                </span>
+                <span>JS</span>
+              </div>
+            </div>
+
+            <div class="skills-content">
+              <h3>Back-End</h3>
+              <div class="content">
+                <span>Python</span>
+                <span>Django</span>
+                <span>Fast API</span>
+              </div>
+            </div>
+
+            <div class="skills-content">
+              <h3>UI/UX Design</h3>
+              <div class="content">
+                <span>Figma</span>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
   </div>
 
   <script src="main.js"></script>
