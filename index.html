@@ -140,7 +140,7 @@
         </article>
       </section>
 
-      <section class="book-page page-right" id="turn-2">
+      <section class="book-page page-right turn" id="turn-2">
         <article class="page-front">
           <h1 class="title">My Services</h1>
           <div class="services-box">
@@ -187,33 +187,140 @@
             <div class="skills-content">
               <h3>Front-End</h3>
               <div class="content">
-                <span>HTML</span>
                 <span>
-                  <svg class="css-icon">
+                  <svg class="skill-icon">
+                    <use href="img/sprite.svg#html"></use>
+                  </svg>
+                  HTML
+                </span>
+                <span>
+                  <svg class="skill-icon">
                     <use href="img/sprite.svg#css"></use>
                   </svg>
                   CSS
                 </span>
-                <span>JS</span>
+                <span>
+                  <svg class="skill-icon">
+                    <use href="img/sprite.svg#js"></use>
+                  </svg>
+                  JS
+                </span>
               </div>
             </div>
 
             <div class="skills-content">
               <h3>Back-End</h3>
               <div class="content">
-                <span>Python</span>
-                <span>Django</span>
-                <span>Fast API</span>
+                <span>
+                  <svg class="skill-icon">
+                    <use href="img/sprite.svg#python"></use>
+                  </svg>
+                  Python
+                </span>
+                <span>
+                  <svg class="skill-icon">
+                    <use href="img/sprite.svg#dj"></use>
+                  </svg>
+                  Django
+                </span>
+                <span>
+                  <svg class="skill-icon">
+                    <use href="img/sprite.svg#fast"></use>
+                  </svg>
+                  Fast API
+                </span>
               </div>
             </div>
 
             <div class="skills-content">
               <h3>UI/UX Design</h3>
               <div class="content">
-                <span>Figma</span>
+                <span>
+                  <svg class="skill-icon">
+                    <use href="img/sprite.svg#figma"></use>
+                  </svg>
+                  Figma
+                </span>
               </div>
             </div>
           </div>
+
+          <span class="number-page">4</span>
+          <span class="nextprev-btn back" data-page="turn-2">
+            <svg class="prev-icon">
+              <use href="img/sprite.svg#prev"></use>
+            </svg>
+          </span>
+        </article>
+      </section>
+
+      <section class="book-page page-right turn" id="turn-3">
+        <article class="page-front">
+          <h1 class="title">Latest Project</h1>
+
+          <div class="portfolio-box">
+            <div class="img-box">
+              <img src="img/4.jpg" class="img-project" alt="4.jpeg">
+            </div>
+            
+
+            <div class="info-box">
+              <div class="info-title">
+                <h3>Project Name</h3>
+                <a href="#">
+                  Live Preview
+                  <svg class="link-icon">
+                    <use href="img/sprite.svg#link"></use>
+                  </svg>
+                </a>
+              </div>
+              <p>Tech used</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi repudiandae mollitia obcaecati fugit illo eos nisi tenetur impedit   blanditiis rem.
+              </p>
+
+              <div class="btn-box">
+                <a href="#" class="btn btn-cv">Source code</a>
+                <a href="#" class="btn btn-cv">More Projects</a>
+              </div>
+            </div>
+          </div>
+
+          <span class="number-page">5</span>
+          <span class="nextprev-btn" data-page="turn-3">
+            <svg class="next-icon">
+              <use href="img/sprite.svg#next"></use>
+            </svg>
+          </span>
+        </article>
+
+        <article class="page-back">
+          <h1 class="title">Contact Me!</h1>
+
+          <div class="contact-box">
+            <form action="#">
+              <input type="text" class="field" placeholder="Full Name" required>
+              <input type="email" class="field" placeholder="Email Address" required>
+              <textarea name="" id="" cols="30" rows="10" class="field" placeholder="Your Message" required></textarea>
+              <input type="submit" class="btn btn-cv" value="Send Message">
+            </form>
+          </div>
+
+          <span class="number-page">6</span>
+          <span class="nextprev-btn back" data-page="turn-3">
+            <svg class="prev-icon">
+              <use href="img/sprite.svg#prev"></use>
+            </svg>
+          </span>
+
+          <a href="#" class="back-profile">
+            <p>
+              Profile
+              <svg class="user-icon">
+                <use href="img/sprite.svg#user"></use>
+              </svg>
+            </p>
+          </a>
         </article>
       </section>
     </main>
