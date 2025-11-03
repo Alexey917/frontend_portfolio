@@ -121,6 +121,7 @@ body {
   min-height: 100vh;
   background-color: var(--bg-color);
   color: var(--text-color);
+  overflow: hidden;
 }
 
 .wrapper {
@@ -128,6 +129,19 @@ body {
   width: 66rem;
   height: 45rem;
   padding: 2rem;
+  animation: show-animate 2s forwards;
+  perspective: 250rem;
+}
+
+@keyframes show-animate {
+  0%, 30% {
+    opacity: 0;
+    transform: rotate(-20deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
 }
 
 .cover {
@@ -147,6 +161,11 @@ body {
   z-index: -1;
 }
 
+.cover.cover-right {
+  z-index: 100;
+  transition: transform 1s cubic-bezier(.645, .045, .355, 1);
+}
+
 .cover.cover-right.turn {
   transform: rotateY(180deg);
 }
@@ -156,6 +175,7 @@ body {
   width: 100%;
   height: 100%;
   display: flex;
+  perspective: 250rem;
 }
 
 .book .book-page {
@@ -168,6 +188,10 @@ body {
   display: flex;
 }
 
+.page-left {
+  box-shadow: -.6rem .6rem .6rem rgba(0, 0, 0, .1);
+}
+
 .profile-page {
   display: flex;
   flex-direction: column;
@@ -178,14 +202,16 @@ body {
 .profile-page .avatar {
   width: 180px;
   height: 180px;
-  margin-bottom: 6rem;
+  margin-bottom: 1rem;
   border-radius: 50%;
   border: .25rem solid var(--main-color);
+  object-fit: cover;
 }
 
 .profile-page h1 {
   font-size: 2.7rem;
   line-height: 1;
+  margin-bottom: .6rem;
 }
 
 .profile-page h3 {
@@ -201,6 +227,7 @@ body {
   padding: 0;
   height: 2.5rem;
 }
+
 
 .vk-link, .tg-link {
   display: inline-flex;
@@ -268,6 +295,7 @@ body {
   right: 0;
   transform-style: preserve-3d;
   transform-origin: left;
+  transition: transform 1s cubic-bezier(.645, .045, .355, 1);
 }
 
 .page-right.turn {
@@ -541,6 +569,7 @@ body {
 .user-icon {
   width: 25px;
   height: 25px;
+  fill: var(--main-color);
 }
 
 .back-profile {
@@ -555,7 +584,14 @@ body {
   font-size: 1.1rem;
   color: var(--main-color);
   display: inline-flex;
+  align-items: center;
+  justify-content: center;
   transition: .5s;
+}
+
+.back-profile:hover {
+  background: var(--main-color);
+  color: var(--white-color);
 }
 
 .back-profile p {
@@ -572,4 +608,9 @@ body {
   opacity: 1;
   transform: translate(-50%) scale(1);
   top: -1.8rem;
+  color: var(--main-color);
+}
+
+.back-profile:hover .user-icon {
+  fill: var(--white-color);
 }
