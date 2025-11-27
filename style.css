@@ -360,6 +360,26 @@ body {
   border-radius: 50%;
 }
 
+.realization-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.realization {
+  
+}
+
+.realization::before {
+  content: '';
+  position: absolute;
+  left: -0.35rem;
+  width: 0.6rem;
+  height: 0.6rem;
+  background: var(--main-color);
+  border-radius: 50%;
+}
+
 .number-page {
   position: absolute;
   bottom: 1.2rem;

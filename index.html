@@ -56,35 +56,21 @@
                 <svg class="calendar-icon">
                   <use href="img/sprite.svg#calendar"></use>
                 </svg>
-                <span class="year">2020 - 2021</span>
+                <span class="year">май — сентябрь 2025</span>
               </div>
-              <h3>Web Developer - Company</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In rerum esse tenetur itaque quo ex.</p>
-            </div>
+              <h3>Neoflex</h3>
+              <h4>Ключевые проекты:</h4>
+              <br />
+              <ul class="realization-list">
+                <h4>Проект: Разработка системы оформления кредитных карт</h4>
+                <br />
+                <li class="realization">Реализовал полный цикл оформления заявки (Prescoring → выбор предложения → Scoring → документы → подтверждение)</li>
+                <li class="realization">Разработал сложную бизнес-логику: ограничение одной активной заявки при неограниченном количестве завершенных</li>
+                <li class="realization">Создал адаптивный пользовательский интерфейс с главной страницей (курсы валют, новости) и формами заявки</li>
+                <li class="realization"> Внедрил управление состоянием через Redux Toolkit с сохранением в localStorage</li>
+              </ul>
 
-            <div class="workeduc-content">
-              <div class="year-wrapper">
-                <svg class="calendar-icon">
-                  <use href="img/sprite.svg#calendar"></use>
-                </svg>
-                <span class="year">2020 - 2021</span>
-              </div>
-              <h3>Web Developer - Company</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In rerum esse tenetur itaque quo ex.</p>
             </div>
-
-            <div class="workeduc-content">
-              <div class="year-wrapper">
-                <svg class="calendar-icon">
-                  <use href="img/sprite.svg#calendar"></use>
-                </svg>
-                <span class="year">2020 - 2021</span>
-              </div>
-              <h3>Web Developer - Company</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In rerum esse tenetur itaque quo ex.</p>
-            </div>
-
-            
           </div>
           <span class="number-page">1</span>
           <span class="nextprev-btn" data-page="turn-1">
@@ -93,6 +79,54 @@
             </svg>
           </span>
         </article>
+        <article class="page-back">
+          <div class="workeduc-box">
+            <div class="workeduc-content">
+              <ul class="realization-list">
+                <li class="realization"> Настроил взаимодействие с REST API (Axios) и реализовал валидацию форм (react-hook-form)</li> 
+                <li class="realization">Обеспечил надежность: покрытие тестами (Vitest, React Testing Library), обработку ошибок, защиту маршрутов</li>
+              </ul>
+              <p class="realization">Стек: React, TypeScript, Redux Toolkit, React-hook-form, Axios, Sass, Vite</p> 
+              <br />
+              <ul class="realization-list">
+                <h4>Хакатон: Админ-панель для управления учебными материалами AI-бота</h4>
+                <br />
+                <li class="realization">Разработал админ-панель за 4 дня с функционалом просмотра, добавления, редактирования материалов и загрузки PDF-файлов</li>
+                <li class="realization"> Реализовал систему авторизации и защиту маршрутов для ограничения доступа</li>
+                <li class="realization">Интегрировал фронтенд с бэкендом через REST API (Axios)</li>
+                <li class="realization">Использовал Ant Design для ускорения разработки профессионального UI</li>
+
+            </div>
+          </div>
+
+          <span class="number-page">2</span>
+          <span class="nextprev-btn back" data-page="turn-1">
+            <svg class="prev-icon">
+              <use href="img/sprite.svg#prev"></use>
+            </svg>
+          </span>
+        </article>
+      </section>
+
+      <section class="book-page page-right turn" id="turn-2">
+        <article class="page-front">
+          <div class="workeduc-box">
+            <div class="workeduc-content">
+              <ul class="realization-list">
+                <li class="realization">Эффективно работал в команде из 6 человек (backend, data science, testing, devops)</li>
+              </ul>
+              <p class="realization">Стек: React, TypeScript, Ant Design, React-hook-form, Axios, CSS, Vite</p>
+            </div>
+          </div>
+
+          <span class="number-page">3</span>
+          <span class="nextprev-btn" data-page="turn-2">
+            <svg class="next-icon">
+              <use href="img/sprite.svg#next"></use>
+            </svg>
+          </span>
+        </article>
+
         <article class="page-back">
           <h1 class="title">Образование</h1>
 
@@ -142,8 +176,8 @@
             </div>
           </div>
 
-          <span class="number-page">2</span>
-          <span class="nextprev-btn back" data-page="turn-1">
+          <span class="number-page">4</span>
+          <span class="nextprev-btn back" data-page="turn-2">
             <svg class="prev-icon">
               <use href="img/sprite.svg#prev"></use>
             </svg>
@@ -151,47 +185,8 @@
         </article>
       </section>
 
-      <section class="book-page page-right turn" id="turn-2">
+      <section class="book-page page-right turn" id="turn-3">
         <article class="page-front">
-          <h1 class="title">Услуги</h1>
-          <div class="services-box">
-            <div class="services-content">
-              <svg class="code-icon">
-                <use href="img/sprite.svg#code"></use>
-              </svg>
-              <h3>Web Development</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, nostrum!</p>
-              <a href="#" class="btn btn-cv">Read More</a>
-            </div>
-
-            <div class="services-content">
-              <svg class="paint-icon">
-                <use href="img/sprite.svg#paint"></use>
-              </svg>
-              <h3>Creste Design</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, nostrum!</p>
-              <a href="#" class="btn btn-cv">Read More</a>
-            </div>
-
-            <div class="services-content">
-              <svg class="chart-icon">
-                <use href="img/sprite.svg#chart"></use>
-              </svg>
-              <h3>Digital Marketing</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, nostrum!</p>
-              <a href="#" class="btn btn-cv">Read More</a>
-            </div>
-          </div>
-
-          <span class="number-page">3</span>
-          <span class="nextprev-btn" data-page="turn-2">
-            <svg class="next-icon">
-              <use href="img/sprite.svg#next"></use>
-            </svg>
-          </span>
-        </article>
-
-        <article class="page-back">
           <h1 class="title">Навыки</h1>
 
           <div class="skills-box">
@@ -243,17 +238,15 @@
               </div>
             </div>
 
-          <span class="number-page">4</span>
-          <span class="nextprev-btn back" data-page="turn-2">
-            <svg class="prev-icon">
-              <use href="img/sprite.svg#prev"></use>
+          <span class="number-page">5</span>
+          <span class="nextprev-btn" data-page="turn-3">
+            <svg class="next-icon">
+              <use href="img/sprite.svg#next"></use>
             </svg>
           </span>
         </article>
-      </section>
 
-      <section class="book-page page-right turn" id="turn-3">
-        <article class="page-front">
+        <article class="page-back">
           <h1 class="title">Мои проекты</h1>
 
           <div class="portfolio-box">
@@ -284,15 +277,17 @@
             </div>
           </div>
 
-          <span class="number-page">5</span>
-          <span class="nextprev-btn" data-page="turn-3">
-            <svg class="next-icon">
-              <use href="img/sprite.svg#next"></use>
+          <span class="number-page">6</span>
+          <span class="nextprev-btn back" data-page="turn-3">
+            <svg class="prev-icon">
+              <use href="img/sprite.svg#prev"></use>
             </svg>
           </span>
         </article>
+      </section>
 
-        <article class="page-back">
+      <section class="book-page page-right turn" id="turn-4">
+        <article class="page-front">
           <h1 class="title">Свяжитесь со мной</h1>
 
           <div class="contact-box">
@@ -304,8 +299,19 @@
             </form>
           </div>
 
-          <span class="number-page">6</span>
-          <span class="nextprev-btn back" data-page="turn-3">
+          <span class="number-page">7</span>
+          <span class="nextprev-btn" data-page="turn-4">
+            <svg class="next-icon">
+              <use href="img/sprite.svg#next"></use>
+            </svg>
+          </span>
+        </article>
+
+        <article class="page-back">
+          
+
+          <span class="number-page">8</span>
+          <span class="nextprev-btn back" data-page="turn-4">
             <svg class="prev-icon">
               <use href="img/sprite.svg#prev"></use>
             </svg>
